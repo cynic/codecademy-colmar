@@ -50,27 +50,30 @@ body {
   font-family: 'Mallanna', sans-serif;
 }
 h1 {
-  font-size: 2.3em;
+  font-size: 3.4em;
   font-weight: bold;
 }
 h2 {
-  font-size: 1.6em;
+  font-size: 2.2em;
   font-weight:bold;
 }
 h3 {
+  font-size: 1.5em;
   margin-bottom: 8px;
   margin-top: 8px;
 }
-p {
-  font-size: 1em;
+p, a {
+  font-size: 1.4em;
 }
 a {
   text-decoration:none;
   color:inherit;
 }
 
+@media only screen and (min-width:620px) {
 .main > div:nth-child(odd) {
   background-color: #6E5540;
+}
 }
 
 /* via paletton.com */
@@ -96,43 +99,76 @@ nav {
   height:64px;
   display:flex;
   align-items: center;
+  padding: 0 24px;
 }
 nav .logo {
   display:flex;
   align-items:center;
-  margin-left: 24px;
 }
-nav .logo img {
-  height:32px;
-  padding:0;
-  margin:0;
-  display:inline-block;
+@media only screen and (max-width: 600px) {
+  nav > .logo, nav .navitems a, nav .navitems li.for-companies {
+    display:none;
+  }
+  nav .navitems {
+    width: 100%;
+  }
+  nav ul {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  nav .navitems li {
+    width: 28px;
+    height: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  nav .navitems .logo {
+    background: url('../images/ic-logo.svg');
+  }
+  nav .navitems .on-campus {
+    background: url('../images/ic-on-campus.svg');
+  }
+  nav .navitems .online {
+    background: url('../images/ic-online.svg');
+  }
+  nav .navitems .sign-in {
+    background: url('../images/ic-login.svg');
+  }
 }
-nav .logo .name {
-  position:relative;
-  top:-0.1em; /* it looks a little bit low, so raise it */
-  text-transform: uppercase;
-  font-family: 'Suranna', serif;
-  font-size:1.4em;
-}
-nav .logo .name .proper {
-  font-weight:bold;
-}
-
-nav .navitems {
-  flex-grow:1;
-  margin-left: 24px;
-}
-nav li {
-  list-style:none;
-  margin-left: 16px;
-  text-align:center;
-}
-nav ul {
-  display:flex;
-  justify-content:flex-end;
-  align-items: center;
-  margin-right:24px;
+@media only screen and (min-width: 601px) {
+  nav .navitems .logo {
+    display:none;
+  }
+  nav .logo img {
+    height:32px;
+    display:inline-block;
+  }
+  nav .logo .name {
+    position:relative;
+    top:-0.1em; /* it looks a little bit low, so raise it */
+    text-transform: uppercase;
+    font-family: 'Suranna', serif;
+    font-size:1.4em;
+  }
+  nav .logo .name .proper {
+    font-weight:bold;
+  }
+  nav .navitems {
+    flex-grow:1;
+    margin-left: 24px;
+  }
+  nav li {
+    list-style:none;
+    margin-left: 16px;
+    text-align:center;
+  }
+  nav ul {
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+  }
 }
 
 /* the remainder */
@@ -143,6 +179,34 @@ nav ul {
 
 /* The first panel */
 
+.biggie .text .button {
+  text-align:center;
+  font-size: 2em;
+  font-weight:bold;
+  margin-top:1em;
+  padding-top:8px;
+  padding-bottom:8px;
+  border-radius:8px;
+}
+@media only screen and (max-width:949px) {
+.biggie img {
+  width: 100%;
+  height: auto;
+}
+.biggie .text {
+  margin: 0 16px;
+  padding: 32px 0;
+}
+.biggie .text h2 {
+  margin-top: 32px;
+  margin-bottom:24px;
+}
+.biggie .text .button {
+  max-width: 480px;
+  margin: 0 auto;
+}
+}
+@media only screen and (min-width:950px) {
 .biggie {
   display:flex;
   align-items: center;
@@ -166,18 +230,61 @@ nav ul {
 .biggie .text h2 {
   margin-top:0.6em;
 }
-.biggie .text .button {
-  text-align:center;
-  font-size: 1.4em;
-  font-weight:bold;
-  margin-top:1em;
-  padding-top:8px;
-  padding-bottom:8px;
-  border-radius:8px;
 }
 
 /* The second panel */
 
+p.attribution {
+  font-size: 0.9em;
+  margin-top:1em;
+}
+.sidestory {
+  transition: background-color 0.3s;
+}
+.storypanel .sidestory:hover {
+  background-color: #6E5540;
+}
+@media only screen and (max-width:800px) {
+  .panel-2 .full {
+    display:none;
+  }
+  .panel-2 .mobile {
+    width:100%;
+    height: auto;
+  }
+  .panel-2 .mainstory {
+    display:none;
+  }
+  .panel-2 .storycontent .sidestories {
+    display:flex;
+    flex-direction: column;
+  }
+  .panel-2 .storycontent .sidestory {
+    padding:16px;
+    margin-bottom:48px;
+  }
+  .panel-2 .storycontent .detail {
+    margin: 16px;
+  }
+  /* and now the last panel on the page */
+  .panel-4 > h1 {
+    padding-top: 32px;
+    margin: 0px 0 16px 0;
+    text-align: center;
+  }
+  .panel-4 video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+  }
+  .panel-4 .sidestories, .panel-4 .mainstory .text {
+    display:none;
+  }
+}
+@media only screen and (min-width:801px) {
+.storypanel .mobile {
+  display: none;
+}
 .storypanel {
   padding-top: 32px;
   padding-bottom:32px;
@@ -227,21 +334,37 @@ nav ul {
   width: 65%;
   margin-left: 16px;
 }
-p.attribution {
-  font-size: 0.9em;
-  margin-top:1em;
 }
 
 /* the third panel */
 
+.panel-3 h1 {
+  text-align:center;
+}
+@media only screen and (max-width:500px) {
+  .panel-3 > h1 {
+    margin-bottom: 16px;
+  }
+  .panel-3 .learnbox img, .panel-3 .learnbox h3, .panel-3 .learnbox p {
+    display:none;
+  }
+  .panel-3 .learnbox .detail h2 {
+    padding: 16px 16px 24px 16px;
+    margin-bottom:8px;
+    background-color: #6E5540;
+    border-radius: 8px;
+  }
+  .panel-3 {
+    padding: 0 16px;
+    margin-bottom: 32px;
+  }
+}
+@media only screen and (min-width:501px) {
 .panel-3 {
   padding-top: 32px;
   /* the extra 16px comes from the .learnbox */
   padding-left: 56px;
   padding-right:56px;
-}
-.panel-3 h1 {
-  text-align:center;
 }
 
 .panel-3 .courses {
@@ -270,4 +393,5 @@ p.attribution {
   margin-right: 16px;
   background-color: white;
   margin-bottom: 32px;
+}
 }
