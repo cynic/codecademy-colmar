@@ -1,0 +1,273 @@
+/* Eric Meyer's CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Styles */
+
+body {
+  font-family: 'Mallanna', sans-serif;
+}
+h1 {
+  font-size: 2.3em;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.6em;
+  font-weight:bold;
+}
+h3 {
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+p {
+  font-size: 1em;
+}
+a {
+  text-decoration:none;
+  color:inherit;
+}
+
+.main > div:nth-child(odd) {
+  background-color: #6E5540;
+}
+
+/* via paletton.com */
+.color-primary-0 { color: #AA6C39 }	/* Main Primary color */
+.color-primary-1 { color: #322D29 }
+.color-primary-2 { color: #6E5540 }
+.color-primary-3 { color: #E67314 }
+.color-primary-4 { color: #FF7400 }
+.bg-primary-0 { background-color: #AA6C39 }	/* Main Primary color */
+.bg-primary-1 { background-color: #322D29 }
+.bg-primary-2 { background-color: #6E5540 }
+.bg-primary-3 { background-color: #E67314 }
+.bg-primary-4 { background-color: #FF7400 }
+
+.strike {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* The navigation top bar */
+
+nav {
+  height:64px;
+  display:flex;
+  align-items: center;
+}
+nav .logo {
+  display:flex;
+  align-items:center;
+  margin-left: 24px;
+}
+nav .logo img {
+  height:32px;
+  padding:0;
+  margin:0;
+  display:inline-block;
+}
+nav .logo .name {
+  position:relative;
+  top:-0.1em; /* it looks a little bit low, so raise it */
+  text-transform: uppercase;
+  font-family: 'Suranna', serif;
+  font-size:1.4em;
+}
+nav .logo .name .proper {
+  font-weight:bold;
+}
+
+nav .navitems {
+  flex-grow:1;
+  margin-left: 24px;
+}
+nav li {
+  list-style:none;
+  margin-left: 16px;
+  text-align:center;
+}
+nav ul {
+  display:flex;
+  justify-content:flex-end;
+  align-items: center;
+  margin-right:24px;
+}
+
+/* the remainder */
+
+.main {
+  width: 100%;
+}
+
+/* The first panel */
+
+.biggie {
+  display:flex;
+  align-items: center;
+  padding: 32px 24px;
+}
+.biggie .container {
+  width:60%;
+  height:auto;
+  overflow:hidden;
+}
+.biggie img {
+  max-width:60%;
+  height:auto;
+  display:block;
+}
+.biggie .text {
+  padding-left: 12px;
+  margin-left: 12px;
+  max-width:30%;
+}
+.biggie .text h2 {
+  margin-top:0.6em;
+}
+.biggie .text .button {
+  text-align:center;
+  font-size: 1.4em;
+  font-weight:bold;
+  margin-top:1em;
+  padding-top:8px;
+  padding-bottom:8px;
+  border-radius:8px;
+}
+
+/* The second panel */
+
+.storypanel {
+  padding-top: 32px;
+  padding-bottom:32px;
+}
+.storypanel > h1 {
+  margin-bottom: 32px;
+  text-align: center;
+}
+.storypanel .storycontent {
+  display:flex;
+}
+.storypanel .storycontent .mainstory {
+  flex-basis:60%;
+  flex-grow:6;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.mainstory img, .mainstory video {
+  width: 100%;
+  height: auto;
+}
+.storypanel .storycontent .sidestories {
+  flex-basis:40%;
+  flex-grow:4;
+  border-left: solid 1px #694f44;
+}
+.storypanel .storycontent .mainstory h1 {
+  margin-top:32px;
+  margin-bottom:24px;
+}
+.storypanel .storycontent .sidestory:first-child {
+  border-top: none;
+}
+.storypanel .storycontent .sidestory {
+  padding: 16px;
+  border-bottom: solid 1px #694f44;
+  border-top: solid 1px #694f44;
+  margin-bottom: 1px;
+  display:flex;
+  align-items: center;
+}
+.storypanel .storycontent .sidestory img {
+  width:35%;
+  height:auto;
+}
+.storypanel .storycontent .sidestory .detail {
+  width: 65%;
+  margin-left: 16px;
+}
+p.attribution {
+  font-size: 0.9em;
+  margin-top:1em;
+}
+
+/* the third panel */
+
+.panel-3 {
+  padding-top: 32px;
+  /* the extra 16px comes from the .learnbox */
+  padding-left: 56px;
+  padding-right:56px;
+}
+.panel-3 h1 {
+  text-align:center;
+}
+
+.panel-3 .courses {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin-top: 32px;
+}
+
+.panel-3 .learnbox img {
+  height:auto;
+  width: 100%;
+}
+
+.panel-3 .learnbox .detail {
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom:24px;
+}
+
+.panel-3 .learnbox {
+  flex-basis: 25%;
+  flex-grow:1;
+  margin-left: 16px;
+  margin-right: 16px;
+  background-color: white;
+  margin-bottom: 32px;
+}
