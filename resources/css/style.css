@@ -179,6 +179,9 @@ nav .logo {
 
 /* The first panel */
 
+.biggie { /* irrespective of screen size */
+  background-color: #6E5540;
+}
 .biggie .text .button {
   text-align:center;
   font-size: 2em;
@@ -394,4 +397,38 @@ p.attribution {
   background-color: white;
   margin-bottom: 32px;
 }
+}
+
+/* Let's play some footie */
+/* it's the last bit, so let's try out
+a different way of doing things! */
+
+footer {
+  padding: 16px 24px;
+  display:flex;
+}
+footer .copyright {
+  width: 100%;
+}
+@media only screen and (min-width:481px) {
+footer {
+  border-top: solid 1px #694f44;
+}
+footer .legalese {
+  width: 8em;
+  float:right;
+}
+footer ul {
+  list-style:none;
+  display:flex;
+  justify-content: flex-end;
+}
+footer ul li {
+  margin-left: 16px;
+}
+}
+@media only screen and (max-width:480px) {
+  footer .legalese {
+    display:none;
+  }
 }
