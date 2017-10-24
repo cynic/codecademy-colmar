@@ -97,49 +97,49 @@ a {
 
 /* The navigation top bar */
 
-nav {
+header {
   height:64px;
   display:flex;
   align-items: center;
 }
-nav .logo {
+header .logo {
   display:flex;
   align-items:center;
 }
 @media only screen and (max-width: 650px) {
-  nav > .logo, nav .navitems a, nav .navitems li.for-companies {
+  header > .logo, header nav a, header nav li.for-companies {
     display:none;
   }
-  nav .navitems {
+  header nav {
     width: 100%;
   }
-  nav ul {
+  header ul {
     display:flex;
     align-items: center;
     justify-content: space-around;
   }
-  nav .navitems li {
+  header nav li {
     width: 28px;
     height: 25px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  nav .navitems .logo {
+  header nav .logo {
     background: url('../images/ic-logo.svg');
   }
-  nav .navitems .on-campus {
+  header nav .on-campus {
     background: url('../images/ic-on-campus.svg');
   }
-  nav .navitems .online {
+  header nav .online {
     background: url('../images/ic-online.svg');
   }
-  nav .navitems .sign-in {
+  header nav .sign-in {
     background: url('../images/ic-login.svg');
   }
 }
 @media only screen and (min-width: 651px) {
-  nav {
+  header {
     padding: 0 8px 0 24px;
   }
   li {
@@ -149,33 +149,33 @@ nav .logo {
   li:hover {
     background-color: #aa5939;
   }
-  nav .navitems .logo {
+  header nav .logo {
     display:none;
   }
-  nav .logo img {
+  header .logo img {
     height:32px;
     display:inline-block;
   }
-  nav .logo .name {
+  header .logo .name {
     position:relative;
     top:-0.1em; /* it looks a little bit low, so raise it */
     text-transform: uppercase;
     font-family: 'Suranna', serif;
     font-size:1.4em;
   }
-  nav .logo .name .proper {
+  header .logo .name .proper {
     font-weight:bold;
   }
-  nav .navitems {
+  header nav {
     flex-grow:1;
     margin-left: 24px;
   }
-  nav li {
+  header li {
     list-style:none;
     padding: 8px 16px 8px 16px;
     text-align:center;
   }
-  nav ul {
+  header ul {
     display:flex;
     justify-content:flex-end;
     align-items: center;
