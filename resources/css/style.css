@@ -219,17 +219,19 @@ header li:hover {
 }
 .biggie .text .button {
   text-align:center;
+  background-color: #84C68C;
   font-size: 2em;
   font-weight:bold;
   margin-top:1em;
   padding-top:8px;
   padding-bottom:8px;
   border-radius:8px;
-  transition: background-color 0.45s;
-  border: solid 2px #004208;
+  transition: background-color 0.35s, color 0.8s;
+  border: solid 2px #2C8437;
 }
 .biggie .text .button:hover {
   background-color:#004208;
+  color:#52A55D;
   cursor:pointer;
 }
 @media only screen and (max-width:949px) {
