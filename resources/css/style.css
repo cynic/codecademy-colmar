@@ -106,6 +106,20 @@ header .logo {
   display:flex;
   align-items:center;
 }
+header li:hover, footer li:hover {
+  background-color: #aa5939;
+  cursor:pointer;
+}
+@media only screen and (min-width:751px) and (max-width:850px) {
+  header {
+    font-size: 90%;
+  }
+}
+@media only screen and (min-width:651px) and (max-width:750px) {
+  header {
+    font-size: 75%;
+  }
+}
 @media only screen and (max-width: 650px) {
   header > .logo, header nav a, header nav li.for-companies {
     display:none;
@@ -119,23 +133,25 @@ header .logo {
     justify-content: space-around;
   }
   header nav li {
-    width: 28px;
-    height: 25px;
+    width: 32px;
+    height: 32px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 8px;
+    border-radius: 8px;
   }
   header nav .logo {
-    background: url('../images/ic-logo.svg');
+    background-image: url('../images/ic-logo.svg');
   }
   header nav .on-campus {
-    background: url('../images/ic-on-campus.svg');
+    background-image: url('../images/ic-on-campus.svg');
   }
   header nav .online {
-    background: url('../images/ic-online.svg');
+    background-image: url('../images/ic-online.svg');
   }
   header nav .sign-in {
-    background: url('../images/ic-login.svg');
+    background-image: url('../images/ic-login.svg');
   }
 }
 @media only screen and (min-width: 651px) {
@@ -145,9 +161,6 @@ header .logo {
   li {
     border-radius: 8px;
     transition: background-color 0.3s;
-  }
-  li:hover {
-    background-color: #aa5939;
   }
   header nav .logo {
     display:none;
