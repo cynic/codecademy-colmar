@@ -48,7 +48,7 @@ table {
 
 body {
   font-family: 'Mallanna', sans-serif;
-  color: #292827;
+  color: rgba(0,0,0,0.7);
 }
 h1 {
   font-size: 3.4em;
@@ -74,21 +74,16 @@ a {
 
 @media only screen and (min-width:620px) {
 .main > div:nth-child(odd) {
-  background-color: #6E5540;
+  background-color: #2C8437;
 }
 }
 
 /* via paletton.com */
-.color-primary-0 { color: #AA6C39 }	/* Main Primary color */
-.color-primary-1 { color: #322D29 }
-.color-primary-2 { color: #6E5540 }
-.color-primary-3 { color: #E67314 }
-.color-primary-4 { color: #FF7400 }
-.bg-primary-0 { background-color: #AA6C39 }	/* Main Primary color */
-.bg-primary-1 { background-color: #322D29 }
-.bg-primary-2 { background-color: #6E5540 }
-.bg-primary-3 { background-color: #E67314 }
-.bg-primary-4 { background-color: #FF7400 }
+.color-primary-0 { color: #2C8437 }	/* Main Primary color */
+.color-primary-1 { color: #84C68C }
+.color-primary-2 { color: #52A55D }
+.color-primary-3 { color: #10631B }
+.color-primary-4 { color: #004208 }
 
 .strike {
   text-decoration: line-through;
@@ -107,7 +102,8 @@ header .logo {
   align-items:center;
 }
 header li:hover, footer li:hover {
-  background-color: #aa5939;
+  background-color: #84C68C;
+  color:#004208;
   cursor:pointer;
 }
 @media only screen and (min-width:751px) and (max-width:850px) {
@@ -204,7 +200,7 @@ header li:hover, footer li:hover {
 /* The first panel */
 
 .biggie { /* irrespective of screen size */
-  background-color: #6E5540;
+  background-color: #2C8437;
 }
 .biggie .text .button {
   text-align:center;
@@ -214,10 +210,11 @@ header li:hover, footer li:hover {
   padding-top:8px;
   padding-bottom:8px;
   border-radius:8px;
-  transition: background-color 0.6s;
+  transition: background-color 0.45s;
+  border: solid 2px #10631B;
 }
 .biggie .text .button:hover {
-  background-color:#aa5939;
+  background-color:#10631B;
 }
 @media only screen and (max-width:949px) {
 .biggie img {
@@ -270,10 +267,10 @@ p.attribution {
   margin-top:1em;
 }
 .sidestory {
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
 .storypanel .sidestory:hover {
-  background-color: #6E5540;
+  background-color: #52A55D;
 }
 @media only screen and (max-width:800px) {
   .panel-2 .full {
@@ -340,7 +337,7 @@ p.attribution {
 .storypanel .storycontent .sidestories {
   flex-basis:40%;
   flex-grow:4;
-  border-left: solid 1px #694f44;
+  border-left: solid 1px #004208;
 }
 .storypanel .storycontent .mainstory h1 {
   margin-top:32px;
@@ -351,8 +348,8 @@ p.attribution {
 }
 .storypanel .storycontent .sidestory {
   padding: 16px;
-  border-bottom: solid 1px #694f44;
-  border-top: solid 1px #694f44;
+  border-bottom: solid 1px #004208;
+  border-top: solid 1px #004208;
   margin-bottom: 1px;
   display:flex;
   align-items: center;
@@ -372,6 +369,9 @@ p.attribution {
 .panel-3 h1 {
   text-align:center;
 }
+.panel-3 .learnbox .detail h2 {
+  color: #004208;
+}
 @media only screen and (max-width:500px) {
   .panel-3 > h1 {
     margin-bottom: 16px;
@@ -382,12 +382,17 @@ p.attribution {
   .panel-3 .learnbox .detail h2 {
     padding: 16px 16px 24px 16px;
     margin-bottom:8px;
-    background-color: #6E5540;
-    border-radius: 8px;
+    background-color: #52A55D;
+    border-radius: 10px;
+    transition: background-color 0.3s;
   }
   .panel-3 {
     padding: 0 16px;
     margin-bottom: 32px;
+  }
+  .panel-3 .learnbox .detail h2:hover {
+    background-color: #2C8437;
+    cursor:pointer;
   }
 }
 @media only screen and (min-width:501px) {
@@ -408,23 +413,26 @@ p.attribution {
 .panel-3 .learnbox img {
   height:auto;
   width: 100%;
+  border-radius: 6px 6px 0 0;
 }
 
 .panel-3 .learnbox .detail {
-  margin-top: 16px;
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-bottom:24px;
+  margin: 16px 16px 24px 16px;
+}
+.panel-3 .learnbox:hover {
+  border: solid 3px #84C68C;
+  border-radius: 8px;
+  margin: -3px 13px 29px 13px;
+  cursor:pointer;
 }
 
 .panel-3 .learnbox {
   min-width:265px;
   flex-basis: 25%;
   flex-grow:1;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin: 0 16px 32px 16px;
   background-color: white;
-  margin-bottom: 32px;
+  border-radius: 6px;
 }
 }
 
