@@ -77,9 +77,9 @@ header {
 }
 
 @media only screen and (min-width:620px) {
-.main > div:nth-child(odd) {
-  background-color: #10631B;
-}
+  .main > div:nth-child(odd) {
+    background-color: #10631B;
+  }
 }
 
 /* via paletton.com */
@@ -235,47 +235,47 @@ header li:hover {
   cursor:pointer;
 }
 @media only screen and (max-width:949px) {
-.biggie img {
-  width: 100%;
-  height: auto;
-}
-.biggie .text {
-  margin: 0 16px;
-  padding: 32px 0;
-}
-.biggie .text h2 {
-  margin-top: 32px;
-  margin-bottom:24px;
-}
-.biggie .text .button {
-  max-width: 480px;
-  margin: 0 auto;
-}
+  .biggie img {
+    width: 100%;
+    height: auto;
+  }
+  .biggie .text {
+    margin: 0 16px;
+    padding: 32px 0;
+  }
+  .biggie .text h2 {
+    margin-top: 32px;
+    margin-bottom:24px;
+  }
+  .biggie .text .button {
+    max-width: 480px;
+    margin: 0 auto;
+  }
 }
 @media only screen and (min-width:950px) {
-.biggie {
-  display:flex;
-  align-items: center;
-  padding: 32px 24px;
-}
-.biggie .container {
-  width:60%;
-  height:auto;
-  overflow:hidden;
-}
-.biggie img {
-  max-width:60%;
-  height:auto;
-  display:block;
-}
-.biggie .text {
-  padding-left: 12px;
-  margin-left: 12px;
-  max-width:30%;
-}
-.biggie .text h2 {
-  margin-top:0.6em;
-}
+  .biggie {
+    display:flex;
+    align-items: center;
+    padding: 32px 24px;
+  }
+  .biggie .container {
+    width:60%;
+    height:auto;
+    overflow:hidden;
+  }
+  .biggie img {
+    max-width:60%;
+    height:auto;
+    display:block;
+  }
+  .biggie .text {
+    padding-left: 12px;
+    margin-left: 12px;
+    max-width:30%;
+  }
+  .biggie .text h2 {
+    margin-top:0.6em;
+  }
 }
 
 /* The second panel */
@@ -328,58 +328,58 @@ p.attribution {
   }
 }
 @media only screen and (min-width:801px) {
-.storypanel .mobile {
-  display: none;
-}
-.storypanel {
-  padding-top: 32px;
-  padding-bottom:32px;
-}
-.storypanel > h1 {
-  margin-bottom: 32px;
-  text-align: center;
-}
-.storypanel .storycontent {
-  display:flex;
-}
-.storypanel .storycontent .mainstory {
-  flex-basis:60%;
-  flex-grow:6;
-  margin-left: 24px;
-  margin-right: 24px;
-}
-.mainstory img, .mainstory video {
-  width: 100%;
-  height: auto;
-}
-.storypanel .storycontent .sidestories {
-  flex-basis:40%;
-  flex-grow:4;
-  border-left: solid 1px #004208;
-}
-.storypanel .storycontent .mainstory h1 {
-  margin-top:32px;
-  margin-bottom:24px;
-}
-.storypanel .storycontent .sidestory:first-child {
-  border-top: none;
-}
-.storypanel .storycontent .sidestory {
-  padding: 16px;
-  border-bottom: solid 1px #004208;
-  border-top: solid 1px #004208;
-  margin-bottom: 1px;
-  display:flex;
-  align-items: center;
-}
-.storypanel .storycontent .sidestory img {
-  width:35%;
-  height:auto;
-}
-.storypanel .storycontent .sidestory .detail {
-  width: 65%;
-  margin-left: 16px;
-}
+  .storypanel .mobile {
+    display: none;
+  }
+  .storypanel {
+    padding-top: 32px;
+    padding-bottom:32px;
+  }
+  .storypanel > h1 {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .storypanel .storycontent {
+    display:flex;
+  }
+  .storypanel .storycontent .mainstory {
+    flex-basis:60%;
+    flex-grow:6;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .mainstory img, .mainstory video {
+    width: 100%;
+    height: auto;
+  }
+  .storypanel .storycontent .sidestories {
+    flex-basis:40%;
+    flex-grow:4;
+    border-left: solid 1px #004208;
+  }
+  .storypanel .storycontent .mainstory h1 {
+    margin-top:32px;
+    margin-bottom:24px;
+  }
+  .storypanel .storycontent .sidestory:first-child {
+    border-top: none;
+  }
+  .storypanel .storycontent .sidestory {
+    padding: 16px;
+    border-bottom: solid 1px #004208;
+    border-top: solid 1px #004208;
+    margin-bottom: 1px;
+    display:flex;
+    align-items: center;
+  }
+  .storypanel .storycontent .sidestory img {
+    width:35%;
+    height:auto;
+  }
+  .storypanel .storycontent .sidestory .detail {
+    width: 65%;
+    margin-left: 16px;
+  }
 }
 
 /* the third panel */
@@ -414,46 +414,46 @@ p.attribution {
   }
 }
 @media only screen and (min-width:501px) {
-.panel-3 {
-  padding-top: 32px;
-  /* the extra 16px comes from the .learnbox */
-  padding-left: 56px;
-  padding-right:56px;
-}
+  .panel-3 {
+    padding-top: 32px;
+    /* the extra 16px comes from the .learnbox */
+    padding-left: 56px;
+    padding-right:56px;
+  }
 
-.panel-3 .courses {
-  display:flex;
-  flex-wrap: wrap;
-  justify-content:center;
-  margin-top: 32px;
-}
+  .panel-3 .courses {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 32px;
+  }
 
-.panel-3 .learnbox img {
-  height:auto;
-  width: 100%;
-  border-radius: 6px 6px 0 0;
-}
+  .panel-3 .learnbox img {
+    height:auto;
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+  }
 
-.panel-3 .learnbox .detail {
-  margin: 16px 16px 24px 16px;
-}
-.panel-3 .learnbox:hover {
-  border: solid 8px #84C68C;
-  border-radius: 14px;
-  margin: -8px 8px 24px 8px;
-  opacity: 0.9;
-  cursor:pointer;
-}
+  .panel-3 .learnbox .detail {
+    margin: 16px 16px 24px 16px;
+  }
+  .panel-3 .learnbox:hover {
+    border: solid 8px #84C68C;
+    border-radius: 14px;
+    margin: -8px 8px 24px 8px;
+    opacity: 0.9;
+    cursor:pointer;
+  }
 
-.panel-3 .learnbox {
-  min-width:265px;
-  flex-basis: 25%;
-  flex-grow:1;
-  margin: 0 16px 32px 16px;
-  background-color: white;
-  border-radius: 6px;
-  transition: border-color 0.2s, opacity 0.2s;
-}
+  .panel-3 .learnbox {
+    min-width:265px;
+    flex-basis: 25%;
+    flex-grow:1;
+    margin: 0 16px 32px 16px;
+    background-color: white;
+    border-radius: 6px;
+    transition: border-color 0.2s, opacity 0.2s;
+  }
 }
 
 /* Let's play some footie */
@@ -468,21 +468,21 @@ footer .copyright {
   width: 100%;
 }
 @media only screen and (min-width:481px) {
-footer {
-  border-top: solid 1px #694f44;
-}
-footer .legalese {
-  width: 8em;
-  float:right;
-}
-footer ul {
-  list-style:none;
-  display:flex;
-  justify-content: flex-end;
-}
-footer ul li {
-  margin-left: 16px;
-}
+  footer {
+    border-top: solid 1px #694f44;
+  }
+  footer .legalese {
+    width: 8em;
+    float:right;
+  }
+  footer ul {
+    list-style:none;
+    display:flex;
+    justify-content: flex-end;
+  }
+  footer ul li {
+    margin-left: 16px;
+  }
 }
 @media only screen and (max-width:480px) {
   footer .legalese {
