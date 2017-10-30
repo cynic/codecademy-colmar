@@ -71,10 +71,14 @@ a {
   text-decoration:none;
   color:inherit;
 }
+header {
+  background-color: #2C8437;
+  color: black;
+}
 
 @media only screen and (min-width:620px) {
 .main > div:nth-child(odd) {
-  background-color: #2C8437;
+  background-color: #10631B;
 }
 }
 
@@ -102,9 +106,10 @@ header .logo {
   align-items:center;
 }
 header li:hover, footer li:hover {
-  background-color: #84C68C;
-  color:#004208;
   cursor:pointer;
+}
+header li:hover {
+  background-color: #84C68C;
 }
 @media only screen and (min-width:751px) and (max-width:850px) {
   header {
@@ -117,7 +122,7 @@ header li:hover, footer li:hover {
   }
 }
 @media only screen and (max-width: 650px) {
-  header > .logo, header nav a, header nav li.for-companies {
+  header > .logo, header nav a span, header nav li.mobile-exclude {
     display:none;
   }
   header nav {
@@ -129,13 +134,19 @@ header li:hover, footer li:hover {
     justify-content: space-around;
   }
   header nav li {
+    height: 100%;
+    flex-grow:1;
+    padding-top: 16px;
+  }
+  header nav li a {
+    display:block;
     width: 32px;
     height: 32px;
+    margin:0 auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 8px;
-    border-radius: 8px;
   }
   header nav .logo {
     background-image: url('../images/ic-logo.svg');
@@ -155,7 +166,6 @@ header li:hover, footer li:hover {
     padding: 0 8px 0 24px;
   }
   li {
-    border-radius: 8px;
     transition: background-color 0.3s;
   }
   header nav .logo {
@@ -200,7 +210,7 @@ header li:hover, footer li:hover {
 /* The first panel */
 
 .biggie { /* irrespective of screen size */
-  background-color: #2C8437;
+  background-color: #10631B;
 }
 .biggie .text .button {
   text-align:center;
@@ -211,10 +221,11 @@ header li:hover, footer li:hover {
   padding-bottom:8px;
   border-radius:8px;
   transition: background-color 0.45s;
-  border: solid 2px #10631B;
+  border: solid 2px #004208;
 }
 .biggie .text .button:hover {
-  background-color:#10631B;
+  background-color:#004208;
+  cursor:pointer;
 }
 @media only screen and (max-width:949px) {
 .biggie img {
@@ -420,9 +431,10 @@ p.attribution {
   margin: 16px 16px 24px 16px;
 }
 .panel-3 .learnbox:hover {
-  border: solid 3px #84C68C;
-  border-radius: 8px;
-  margin: -3px 13px 29px 13px;
+  border: solid 8px #84C68C;
+  border-radius: 14px;
+  margin: -8px 8px 24px 8px;
+  opacity: 0.9;
   cursor:pointer;
 }
 
@@ -433,6 +445,7 @@ p.attribution {
   margin: 0 16px 32px 16px;
   background-color: white;
   border-radius: 6px;
+  transition: border-color 0.2s, opacity 0.2s;
 }
 }
 
